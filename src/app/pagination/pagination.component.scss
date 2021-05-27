@@ -1,0 +1,49 @@
+@import 'assets/css/theme.scss';
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination host ::ng-deep .ngx-pagination .current {
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: top;
+  height: 30px;
+  background-color: $main-color;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.pagination host ::ng-deep .ngx-pagination li a {
+  color: $gray-color;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.pagination host ::ng-deep .ngx-pagination li.pagination-next:not(.disabled),
+.pagination host ::ng-deep .ngx-pagination li.pagination-previous:not(.disabled),
+.pagination host ::ng-deep .ngx-pagination li.pagination-next a,
+.pagination host ::ng-deep .ngx-pagination li.pagination-previoust a,
+.pagination  .ngx-pagination li.pagination-next a:hover
+.pagination  .ngx-pagination li.pagination-previous a:hover,
+.ngx-pagination a:hover, .ngx-pagination button:hover
+
+{
+  background-color: $main-color !important;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: top;
+  height: 30px;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.pagination host ::ng-deep .ngx-pagination li.pagination-next a,
+.pagination host ::ng-deep .ngx-pagination li.pagination-previous a{
+  color: $white-color;
+}
