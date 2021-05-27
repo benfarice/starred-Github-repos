@@ -1,0 +1,19 @@
+ul li{
+    list-style: none;
+    padding: 15px 20%;
+}
+.flex{
+    display: flex;
+}
+.card-img-top{
+    width: 90px;
+}
+.repo-details{
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+.repo-details + p{
+    margin: 0;
+    padding-left: 10px;
+}

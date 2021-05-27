@@ -8,8 +8,23 @@
        }">
 
     <li>
-     {{repo.full_name}}
-     
+     <div class="card">
+      <div class="flex">
+        <img class="card-img-top"  [src]="repo.owner.avatar_url" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{repo.full_name}}</h5>
+          <p class="card-text">{{repo.description}}.</p>
+          <div class="flex">
+            <div class="flex repo-details">
+              <span class="badge badge-primary">Stars : {{repo.stargazers_count}}</span>
+              <span class="badge badge-warning">Issues : {{repo.open_issues_count}}</span>
+            </div>
+            <p>{{repo.interval}}</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
     </li>
 
     </ng-container>

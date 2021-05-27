@@ -35,6 +35,15 @@ export class AppComponent {
       this.repos = response.items
       this.reposPagination.current_page=page
       this.reposPagination.total = response.total_count
+
+
+      //TO DO :: CREATE A MODEL REPO THAT HAS THE METHOD INTERVAL
+      response.items.forEach((element: { pushed_at: any;interval:string;owner:any }) => {
+        let date = new Date(element.pushed_at)
+        let Difference_In_Time = (new Date).getTime() - date.getTime();
+        let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+        element.interval= "Submitted "+Math.round(Difference_In_Days)+" days ago by "+element.owner.login
+      });
     })
   
   }
