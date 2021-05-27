@@ -11,7 +11,10 @@ export class RepoService {
   constructor(private _http: HttpClient) { }
 
   public getrepos(page: number = 1): Observable<any> {
-    const params = "created:>2017-10-22&sort=stars&order=desc"
+    let date = new Date();
+    date.setDate(date.getDate() - 30);
+    const fromDate = (date.toISOString().split('T')[0])
+    const params = "created:>"+fromDate+"&sort=stars&order=desc"
     return this._http.get(Config.api.repositories.get + params + '&page=' + page);
   }
 }
