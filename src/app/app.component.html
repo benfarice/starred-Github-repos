@@ -30,7 +30,7 @@
     </ng-container>
     <!-- repos List End -->
     <ng-container *ngIf="!repos.length">
-      <!-- <app-not-found message={{notFoundMessage}}></app-not-found> -->
+      <app-not-found message={{notFoundMessage}}></app-not-found>
     </ng-container>
     <!-- Pagination Begin -->
     <app-pagination *ngIf="repos.length" (pageChange)="onPageChange($event)"></app-pagination>
