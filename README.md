@@ -1,5 +1,8 @@
 # Webapp
 
+This project was made as a part of the application (code challenge) to gemography front end developer role (by imzoughene youssef), https://github.com/gemography/frontend-coding-challenge
+I choosed Angular because it is what I most familiar with
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
 ## Development server
